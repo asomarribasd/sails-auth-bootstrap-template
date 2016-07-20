@@ -44,5 +44,37 @@ module.exports = {
 
             return res.view({accountLabel: accountLabel, usersFound: usersFound, localUsers: localUsers, fbUsers: fbUsers, twUsers: twUsers});
         });
-    }
+    },
+    update: function (req, res) {
+    
+        var id=req.param(“id”,null);
+        User.findOne(id).done(function(err, model) {
+        if(req.method==“POST”&&req.param(“User”,null)!=null)
+        {
+            var p=req.param(“User”,null);
+            model.name=p.name;
+            model.age=p.age;
+            model.save(function(err){
+            if (err) {
+                res.send(“Error”);
+
+            }else {
+                res.redirect( 'person/view/' + model.id);
+            }
+                    
+                    
+                  });
+                
+                }
+                else
+                {
+                  
+                  res.render( 'person/update’,{'model’:model});
+                }
+                
+
+              });
+      
+       
+          }
 };

@@ -14,7 +14,8 @@ module.exports = {
     name: 'STRING',
     email: 'STRING',
     firstname: 'STRING',
-    lastname: 'STRING'
+    lastname: 'STRING',
+    birthdate: 'STRING'
   },
       // Generating a hash
     generateHash: function (password) {

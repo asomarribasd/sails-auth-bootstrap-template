@@ -1,0 +1,9 @@
+
+        <h2>Account #<%=model.name %> Update form</h2>
+        <form action=“/account/update/<%=model.id %>” method=“POST”>
+        <table>
+        
+        <tr><td>Name<td><input type=“text” name=“User[name]” value=“<%=model.name %>”><br/>
+        <tr><td>Age<td><input type=“text” name=“User[age]” value=“<%=model.age %>”>
+        <tr ><td><td><input type=“submit” value=“SAVE”>
+        </form>
