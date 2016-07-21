@@ -18,7 +18,7 @@
   "dependencies": {
     "jquery": "~2.x",
     "jquery-ui": "~1.x",
-    "bootstrap": "~3.1.x",
+    "bootstrap": "~4.0",
     "fontawesome": "~4.x",
     "underscore": "~1.x",
     "moment": "~2.x"

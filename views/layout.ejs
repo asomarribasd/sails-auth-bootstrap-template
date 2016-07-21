@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MAs que una idea, una pasion</title>
+    <title>Mas que una idea, una pasion</title>
     <meta name="description"  content="Sails.js Auth base template with PassportJS support." />
 
     <!-- Twitter Card data -->
@@ -38,11 +38,11 @@
 
 <body>
 
-<nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+<nav class="navbar navbar-fixed-top navbar-dark bg-primary" role="navigation">
     <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
         ☰
     </button>
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="/">My Website</a>
     <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
         <ul class="nav navbar-nav pull-right">
             <li class="nav-item active">
@@ -56,11 +56,16 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
-                <a class="btn-signin" href="/auth/login">Sign In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/login">Sign In</a>
             </li>
         </ul>
     </div>
 </nav>
+</br>
+</br>
+</br>
 
 <%- body %>
 
@@ -73,5 +78,6 @@
 <!--SCRIPTS-->
 <script src="/js/dependencies/sails.io.js"></script>
 <!--SCRIPTS END-->
+
 </body>
 </html>
